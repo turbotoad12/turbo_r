@@ -1,0 +1,7 @@
+[package]
+name = "TurboR"
+version = "0.0.1"
+edition = "2024"
+description = "This is my personal library where i can store my helper stuffs."
+
+[dependencies]
