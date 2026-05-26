@@ -1,6 +1,6 @@
 [package]
 name = "turbo_r"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2024"
 description = "This is my personal library where i can store my helper stuffs."
 license = "MIT"
