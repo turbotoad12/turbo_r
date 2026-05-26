@@ -6,4 +6,3 @@ description = "This is my personal library where i can store my helper stuffs."
 license = "MIT"
 
 [dependencies]
-git2 = "0.21.0"
