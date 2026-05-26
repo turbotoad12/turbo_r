@@ -8,7 +8,7 @@ pub fn print_str(s: &str) {
     println!("{}", s);
 }
 
-#[deprecated("this is not important. will be removed soon...!")]
+#[deprecated]
 pub mod git {
     use git2::Repository;
     pub fn git_clone(url: &str, dst: &str) -> Result<(), git2::Error> {
