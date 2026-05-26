@@ -12,3 +12,13 @@ pub mod git {
         Ok(())
     }
 }
+
+pub mod fs {
+    pub fn delete_dir_recursive(dir: &str) {
+        use std::fs;
+
+        if let Err(e) = fs::remove_dir_all(dir) {
+            eprintln!("Failed to remove directory '{}': {}", dir, e);
+        }
+    }
+}
