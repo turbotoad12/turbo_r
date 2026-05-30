@@ -18,10 +18,10 @@ pub mod fs {
             eprintln!("Failed to remove directory '{}': {}", dir, e);
         }
     }
-    
+
     /// Lists all files (not directories) in the specified directory.
     /// Returns a Vec<String> of file names, or an io::Error if something goes wrong.
-    fn list_files_in_dir<P: AsRef<Path>>(dir: P) -> io::Result<Vec<String>> {
+    pub fn list_files_in_dir<P: AsRef<Path>>(dir: P) -> io::Result<Vec<String>> {
         let mut file_names = Vec::new();
         for entry in fs::read_dir(dir)? {
             let entry = entry?;
